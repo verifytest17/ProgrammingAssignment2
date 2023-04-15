@@ -3,10 +3,10 @@
 ## setinv variable have the inverse matrix
 ## getinv variable retrieves the  value of variable 'inv'
 makeCacheMatrix <- function(x = matrix()) {
-      inv <- NULL
+      inv <- NULL                       ## initializes the variable inv with NULL
       set <- function(y) {              ##set the value of matrix
-        x <<- y
-        inv <<- NULL
+        x <<- y                         ## set the value to a global environment
+        inv <<- NULL                    ## reset inv to NULL
       }
       get <- function() x
       setinv <- function(solve) inv <<- solve ##set the value of inverse matrix ie solve
