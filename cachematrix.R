@@ -25,7 +25,7 @@ cacheSolve <- function(x, ...) {
         return(inv)                   ## if cached data (inversed matrix) exist then return it
       }
       data <- x$get()
-      inv <- solve(data, ...)         ## if cached dats doesnot exist then calculate inverse matrix
+      inv <- solve(data, ...)         ## if cached data does not exist then calculate inverse matrix
       x$setinv(inv)
       inv
   
